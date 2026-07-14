@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+
+
+<h2>
+Dashboard Principal
+</h2>
+
+
+<h5>
+Bienvenido {{ user.username }}
+</h5>
+
+
+<div class="row mt-4">
+
+
+<div class="col-md-3">
+
+<div class="card shadow p-3 text-center">
+
+<h5>
+🐝 Colmenas Activas
+</h5>
+
+<h2>
+{{ colmenas }}
+</h2>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<div class="card shadow p-3 text-center">
+
+<h5>
+🍯 Producción del mes
+</h5>
+
+<h2>
+{{ produccion }} kg
+</h2>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-md-3">
+
+<div class="card shadow p-3 text-center">
+
+<h5>
+📦 Inventario
+</h5>
+
+<h2>
+{{ inventario }}
+</h2>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-md-3">
+
+<div class="card shadow p-3 text-center">
+
+<h5>
+💰 Ventas
+</h5>
+
+<h2>
+S/ {{ ventas }}
+</h2>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+{% endblock %}
